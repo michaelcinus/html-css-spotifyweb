@@ -2,19 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
-
-
 
 /* HEADER FIXED */
 #header-fixed{
     width: calc( 100% - 90px );
-    height: 90px;
     position: fixed;
+    height: 90px;
     z-index: 900;
     right: 0;
-    /* debug */
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.58);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#upgrade a{ 
+    color: white ;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-right: 10px ;
+    transition: 2s;
+}
+
+#upgrade:hover {
+    transform: scale(1.1);
 }
 
 /* COLUMN LEFT */
