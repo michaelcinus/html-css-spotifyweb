@@ -7,7 +7,7 @@
 
 /* HEADER FIXED */
 #header-fixed{
-    width: calc( 100% - 90px );
+    width: calc( 100% - 150px );
     position: fixed;
     height: 90px;
     z-index: 900;
@@ -34,12 +34,61 @@
 
 /* COLUMN LEFT */
 #column-left{
-    width: 90px;
+    width: 150px;
     height: calc( 100vh - 90px );
     position: fixed;
     z-index: 899;
-    /* debug */
-    background-color: green;
+    background-color: black;
+    color: gray;
+
+}
+
+#column-left div{
+    padding: 5px 10px;
+}
+
+#column-left a{
+    text-decoration: none;
+    color: gray;
+}
+
+#logo{
+    width: 80%;
+    height: auto;
+}
+
+#info{
+    padding-top: 10px;
+}
+
+#info img{
+ width: 20%;
+ height: auto;
+}
+
+#info span{
+    vertical-align: 5px;
+}
+
+#home:hover,
+#search:hover ,
+#libreria:hover {
+    border-left: solid 2px greenyellow;
+}
+
+#home:hover a,
+#search:hover a ,
+#libreria:hover a {
+    color: white;
+}
+
+#playlist h4{
+    color: white;
+    margin-top: 10px;
+}
+
+#crea{
+    background-color: gray;
 }
 
 /* PRINCIPAL PART */
