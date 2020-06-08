@@ -5,6 +5,8 @@
     font-family: 'Lato', sans-serif;
 }
 
+
+
 /* HEADER FIXED */
 #header-fixed{
     width: calc( 100% - 150px );
@@ -33,9 +35,6 @@
 }
 
 /* COLUMN LEFT */
-@media screen and (max-width:768px){
-    
-}
 
 #column-left{
     width: 180px;
@@ -63,11 +62,30 @@
     width: 70%;
     height: auto;
     padding: 10px;
+    z-index: 860;
+    background-color: black;
+}
+
+#small-logo{ 
+    display: none;
+    padding: 7px 10px;
+}
+
+#small-logo img{
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
 }
 
 /* INFO */
+#info{
+    z-index: 855;
+
+}
+
 #info div{
     padding: 3px 10px;
+    background-color: black;
 }
 
 #info img{
@@ -102,7 +120,7 @@
 /* USERNAME */
 #username{
    position: fixed;
-   z-index: 850; 
+   z-index: 800; 
    bottom: 90px;
    padding: 5px;
    background-color: black;
@@ -130,6 +148,7 @@
     vertical-align: middle;
 }
 
+
 /* PRINCIPAL PART */
 #principal-part{
     padding: 90px 0;
@@ -144,6 +163,10 @@
     padding: 2px;
 }
 
+#principal-part h3{
+    margin-top: 30px;
+}
+
 #principal-part img {
     margin-top: 10px;
     margin-right: 15px;
@@ -153,6 +176,7 @@
 
  #principal-part h6{
      color: grey;
+     margin: 5px 0;
  }
 
 /* GENERAL */
@@ -262,3 +286,27 @@ footer i{
 
 
 
+@media screen and (max-width:768px){
+    #column-left{
+        width: 50px;
+    }
+ 
+     #logo,
+     #column-left span,
+     #playlist,
+     #username {
+         display: none;
+     }
+ 
+     #small-logo{
+         display: block;
+     }
+ 
+     #header-fixed{
+         width: calc( 100% - 50px );
+     }
+ 
+     #principal-part{
+         padding-left: 50px;
+     }
+ }
