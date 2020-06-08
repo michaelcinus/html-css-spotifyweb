@@ -33,70 +33,179 @@
 }
 
 /* COLUMN LEFT */
+@media screen and (max-width:768px){
+    
+}
+
 #column-left{
-    width: 150px;
+    width: 180px;
     height: calc( 100vh - 90px );
     position: fixed;
     z-index: 899;
     background-color: black;
-    color: gray;
-
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-#column-left div{
-    padding: 5px 10px;
-}
 
 #column-left a{
+    color: grey;
     text-decoration: none;
-    color: gray;
 }
 
+#column-left a:hover{
+    color: white;
+}
+
+/* LOGO */
 #logo{
-    width: 80%;
+    width: 70%;
     height: auto;
+    padding: 10px;
 }
 
-#info{
-    padding-top: 10px;
+/* INFO */
+#info div{
+    padding: 3px 10px;
 }
 
 #info img{
- width: 20%;
- height: auto;
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
 }
 
-#info span{
-    vertical-align: 5px;
+
+#info div:hover{
+    border-left: solid 1px greenyellow;
 }
 
-#home:hover,
-#search:hover ,
-#libreria:hover {
-    border-left: solid 2px greenyellow;
+/* PLAYLIST */
+#playlist{
+  margin: 10px;
 }
 
-#home:hover a,
-#search:hover a ,
-#libreria:hover a {
-    color: white;
+#playlist a{
+    display: block;
+    padding: 3px 0;
+    font-size: 0.8em;
 }
 
-#playlist h4{
-    color: white;
-    margin-top: 10px;
+#playlist i{
+    margin: 4px 0;
+    width: 25px;
+    vertical-align: middle;
+    font-size: 2em;
 }
 
-#crea{
-    background-color: gray;
+/* USERNAME */
+#username{
+    
+}
+
+
+#username a{
+    padding-bottom: 10px;
+}
+#username a img{
+    vertical-align: middle;
+    width: 20px;
+    height: auto;
+}
+
+#username hr{
+    margin: 5px;
+}
+
+#profile{
+    width: 20px;
+    height: auto;
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
 }
 
 /* PRINCIPAL PART */
 #principal-part{
-    padding-left: 90px;
-    /* debug */
-    background-color: saddlebrown;
-    height: 1000px;
+    padding: 90px 0;
+    padding-left: 190px;
+    color: white;
+    background-color: #090925;
+}
+
+#principal-part a{
+    text-decoration: none;
+    color: grey;
+    padding: 2px;
+}
+
+#principal-part img {
+    margin-top: 10px;
+    margin-right: 15px;
+    width: 170px;
+    height: auto;
+ }
+
+ #principal-part h6{
+     color: grey;
+ }
+
+/* GENERAL */
+#general{
+    display: flex;
+    justify-content: space-around;
+}
+
+#general li{
+  display: inline-block;
+  margin: 20px 0;
+}
+
+#general a:hover{
+    color: white;
+    border-bottom: solid 1px yellowgreen;
+}
+
+/* subalbum */
+.subalbum{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.layover{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    background-color: rgba(151, 146, 146, 0.30);
+    display: none;
+}
+
+.layover i{
+    z-index: 99;
+    color: white;
+    position: absolute;
+    font-size: 2.5em;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.album:hover .layover{
+    display: block;
+}
+
+.artisti img{
+    border-radius: 50%;
+}
+
+.artisti .layover{
+    border-radius: 50%;
 }
 
 /* FOOTER */
@@ -107,5 +216,5 @@ footer{
     z-index: 900;
     bottom: 0;
     /* debug */
-    background-color: blue;
+    background-color: rgb(29, 29, 31);
 }
