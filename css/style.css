@@ -101,7 +101,11 @@
 
 /* USERNAME */
 #username{
-    
+   position: fixed;
+   z-index: 850; 
+   bottom: 90px;
+   padding: 5px;
+   background-color: black;
 }
 
 
@@ -215,6 +219,46 @@ footer{
     position: fixed;
     z-index: 900;
     bottom: 0;
-    /* debug */
     background-color: rgb(29, 29, 31);
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer a:hover{
+    color: white;
+}
+
+#canzone *{
+    display: inline-block;
+    margin: 2px;
+}
+
+#canzone img{
+    width: 35px;
+    height: auto;
+}
+
+footer i{
+    font-size: 1.3em;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+#player .fa-play-circle{
+    font-size: 2em;
+    padding: 0 5px;
+}
+
+#player hr{
+    width: 80%;
+    display: inline-block;
+}
+
+
+
