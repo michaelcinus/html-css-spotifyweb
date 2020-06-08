@@ -170,7 +170,7 @@
 #principal-part img {
     margin-top: 10px;
     margin-right: 15px;
-    width: 170px;
+    max-width: 170px;
     height: auto;
  }
 
@@ -246,6 +246,7 @@ footer{
     background-color: rgb(29, 29, 31);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
@@ -264,14 +265,20 @@ footer a:hover{
 }
 
 #canzone img{
-    width: 35px;
+    margin-left: 5px;
+    width: 45px;
     height: auto;
+    vertical-align: middle;
 }
 
-footer i{
-    font-size: 1.3em;
+#player{
+    text-align: center;
+}
+
+#player i{
     margin: 5px;
     vertical-align: middle;
+    text-align: center;
 }
 
 #player .fa-play-circle{
@@ -280,8 +287,21 @@ footer i{
 }
 
 #player hr{
-    width: 80%;
+    width: 300px;
     display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+#volume hr{
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+#volume i{
+    margin: 0 5px;
 }
 
 
