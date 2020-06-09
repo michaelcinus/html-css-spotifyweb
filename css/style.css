@@ -290,18 +290,30 @@ footer a:hover{
     padding: 0 5px;
 }
 
-#player hr{
-    width: 300px;
+#player .cursore{
+    height: 2px;
+    width: 350px;
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
+    background-color: grey;
 }
 
-#volume hr{
+.cursore hr{
+    color: white;
+    width: 80px;
+}
+
+
+
+#volume .cursore{
+    height: 2px;
     width: 100px;
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
+    background-color: grey;
+
 }
 
 #volume i{
