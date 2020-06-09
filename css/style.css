@@ -174,7 +174,7 @@
 #principal-part img {
     margin-top: 10px;
     margin-right: 15px;
-    width: 170px;
+    max-width: 170px;
     height: auto;
  }
 
@@ -184,19 +184,27 @@
  }
 
 /* GENERAL */
-#general{
+#general ul {
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
 }
 
 #general li{
   display: inline-block;
-  margin: 20px 0;
+  margin: 20px 5px;
+  
 }
 
 #general a:hover{
     color: white;
-    border-bottom: solid 1px yellowgreen;
+}
+
+#sonoqui{
+    text-align: center;
+    height: 2px;
+    width: 20%;
+    margin-left: 40%;
+    background-color: yellowgreen;
 }
 
 /* subalbum */
@@ -304,7 +312,9 @@ footer a:hover{
     width: 80px;
 }
 
-
+.cursore hr:hover{
+    color: greenyellow;
+}
 
 #volume .cursore{
     height: 2px;
