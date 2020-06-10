@@ -6,10 +6,9 @@
 }
 
 
-
 /* HEADER FIXED */
 #header-fixed{
-    width: calc( 100% - 150px );
+    width: calc( 100% - 180px );
     position: fixed;
     height: 90px;
     z-index: 900;
@@ -59,7 +58,7 @@
 
 /* LOGO */
 #logo{
-    width: 70%;
+    width: 80%;
     height: auto;
     padding: 10px;
     z-index: 860;
@@ -80,7 +79,6 @@
 /* INFO */
 #info{
     z-index: 855;
-
 }
 
 #info div{
@@ -94,7 +92,6 @@
     vertical-align: middle;
 }
 
-
 #info div:hover{
     border-left: solid 1px greenyellow;
 }
@@ -102,11 +99,12 @@
 /* PLAYLIST */
 #playlist{
   margin: 10px;
+  display: flex;
+ flex-direction: column;
 }
 
-#playlist a{
-    display: block;
-    padding: 3px 0;
+#playlist a {
+    margin-top: 3px;
     font-size: 0.8em;
 }
 
@@ -187,6 +185,7 @@
 #general ul {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap ;
 }
 
 #general li{
@@ -213,6 +212,7 @@
     flex-wrap: wrap;
     text-align: center;
 }
+
 
 .layover{
     margin-top: 10px;
@@ -271,16 +271,19 @@ footer a:hover{
     color: white;
 }
 
+#canzone{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 #canzone *{
-    display: inline-block;
-    margin: 2px;
+    margin: 0 3px;
 }
 
 #canzone img{
-    margin-left: 5px;
     width: 45px;
     height: auto;
-    vertical-align: middle;
 }
 
 #player{
@@ -300,7 +303,7 @@ footer a:hover{
 
 #player .cursore{
     height: 2px;
-    width: 350px;
+    width: 35vw;
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
@@ -309,7 +312,7 @@ footer a:hover{
 
 .cursore hr{
     color: white;
-    width: 80px;
+    width: 5vW;
 }
 
 .cursore hr:hover{
@@ -318,7 +321,7 @@ footer a:hover{
 
 #volume .cursore{
     height: 2px;
-    width: 100px;
+    width: 10vw;
     display: inline-block;
     vertical-align: middle;
     margin: 0 10px;
